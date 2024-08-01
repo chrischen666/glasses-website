@@ -203,14 +203,13 @@ a {
 .text-align-center {
     text-align: center;
 }
-textarea{
-    resize: none
+textarea {
+    resize: none;
 }
 /* layout通用佈局 */
 /* header */
 .header {
     background-color: #aa0601;
-
 }
 .header-main {
     max-width: 1320px;
@@ -236,6 +235,9 @@ textarea{
 .menu li a {
     padding: 25px 0;
 }
+.menu li a:hover {
+    font-weight: bold;
+}
 
 @media (max-width: 767px) {
     .logo {
@@ -260,87 +262,90 @@ textarea{
     }
 }
 /* footer */
-.footer{
-    background-color: #AA0601;
+.footer {
+    background-color: #aa0601;
     color: #fff;
     padding: 48px 0px 32px;
 }
-.footer-menu{
+.footer-menu {
     display: flex;
     gap: 48px;
     margin-bottom: 35px;
-    
 }
-.footer-menu a{
+.footer-menu a {
     padding: 16px 0;
 }
-.footer-wrap{
+.footer-wrap {
     display: flex;
     justify-content: space-between;
     margin-bottom: 33px;
 }
-.footer-social{
+.footer-social {
     display: flex;
     gap: 32px;
 }
-.footer-social a{
+.footer-social a {
     width: 48px;
     height: 48px;
 }
-.footer-privacy{
+.footer-privacy {
     border-top: 1px solid #fff;
     display: flex;
     justify-content: space-between;
-    padding-top: 32px ;
+    padding-top: 32px;
 }
-.footer-privacy ul{
+.footer-privacy ul {
     font-size: 14px;
     display: flex;
     gap: 48px;
 }
-.footer-tel span,.footer-mail span{
+.footer-tel span,
+.footer-mail span {
     font-size: 36px;
     margin-right: 22px;
 }
-.footer-tel,.footer-mail{
+.footer-tel,
+.footer-mail {
     font-size: 36px;
     display: flex;
     align-items: center;
 }
-.footer-tel{
+.footer-tel {
     margin-bottom: 8px;
 }
-@media(max-width:767px){
-    .footer{
+@media (max-width: 767px) {
+    .footer {
         padding: 24px 0px;
     }
-    .footer-wrap{
+    .footer-wrap {
         margin-bottom: 20px;
     }
-    .footer-menu{
+    .footer-menu {
         display: none;
     }
-    .footer-tel span,.footer-mail span{
+    .footer-tel span,
+    .footer-mail span {
         font-size: 24px;
     }
-    .footer-tel,.footer-mail{
+    .footer-tel,
+    .footer-mail {
         font-size: 16px;
     }
-    .footer-social{
+    .footer-social {
         gap: 8px;
     }
-    .footer-social a{
+    .footer-social a {
         width: 24px;
         height: 24px;
     }
-    .footer-privacy{
+    .footer-privacy {
         flex-direction: column;
         padding-top: 20px;
     }
-    .footer-privacy p{
+    .footer-privacy p {
         margin-bottom: 8px;
     }
-    .footer-privacy ul{
+    .footer-privacy ul {
         flex-direction: column;
         gap: 8px;
     }
@@ -353,7 +358,8 @@ textarea{
     background-repeat: no-repeat;
     background-size: cover;
     height: 787px;
-    padding: 300px 0;
+    /* display: flex;
+    justify-content: flex-end; */
 }
 .banner-main {
     display: flex;
@@ -369,26 +375,32 @@ textarea{
     font-size: 64px;
     font-weight: bold;
 }
-.banner a {
+.banner-btn {
     font-size: 20px;
     color: #fff;
     padding: 6px 12px;
     background-color: #aa0601;
 }
-@media(max-width:972px){
+.banner-btn:hover {
+    background: #650300;
+}
+@media (max-width: 972px) {
     .banner {
         background-image: url("img/home-header-sm.png");
     }
 }
 
 @media (max-width: 576px) {
+    .banner {
+        height: 396px;
+    }
     .banner-main p {
         font-size: 16px;
     }
     .banner-main h1 {
         font-size: 24px;
     }
-    .banner-main a {
+    .banner-btn {
         font-size: 20px;
     }
 }
@@ -552,7 +564,13 @@ textarea{
 .contact-content label {
     margin-bottom: 8px;
 }
-.contact-content input,.opinion {
+.contact-content input,
+.contact-content textarea {
+    background-color: transparent;
+    border: 1px solid #000;
+}
+.contact-content input,
+.opinion {
     margin-bottom: 16px;
     padding: 6px 12px;
 }
@@ -564,25 +582,28 @@ textarea{
     color: #fff;
     cursor: pointer;
 }
-.contact-content button{
+.contact-submit:hover {
+    background: #650300;
+}
+.contact-content button {
     border: 0;
 }
-@media(max-width:992px){
-    .contact-content{
+@media (max-width: 992px) {
+    .contact-content {
         width: 576px;
     }
-    .contact-content p{
+    .contact-content p {
         font-size: 16px;
     }
 }
-@media(max-width:767px){
-    .contact-content{
+@media (max-width: 767px) {
+    .contact-content {
         width: 348px;
     }
-    .contact-title{
+    .contact-title {
         font-size: 24px;
     }
-    .contact-submit{
+    .contact-submit {
         padding: 16px 142px;
     }
 }

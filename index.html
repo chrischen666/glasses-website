@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Glasses Website</title>
+        <title>Document</title>
         <link rel="stylesheet" href="style.css" />
         <link
             rel="stylesheet"
@@ -34,7 +34,7 @@
             <div class="container banner-main">
                 <p>Promise-Desert 2020 早春系列</p>
                 <h1>看得清，才能看得遠</h1>
-                <a href="#">立即購買</a>
+                <a href="#" class="banner-btn">立即購買</a>
             </div>
         </section>
         <section class="main">
@@ -169,24 +169,26 @@
                     </p>
 
                     <label for="name">姓名</label>
-                    <input type="text" name="name" placeholder="陳小明" />
+                    <input type="text" name="name" placeholder="陳小明" id="name"/>
                     <label for="phone">聯絡電話</label>
-                    <input type="tel" name="phone" placeholder="0912-345-678" />
+                    <input type="tel" name="phone" placeholder="0912-345-678" id="phone"/>
                     <label for="email">電子郵件</label>
                     <input
+                    id="email"
                         type="email"
                         name="email"
                         placeholder="example@email.com"
                     />
                     <label for="opinionl">意見反應</label>
                     <textarea
+                        id="opinionl"
                         class="opinion"
                         name="opinion"
                         placeholder="請輸入您的意見"
                         rows="8"
                     ></textarea>
                     <label for="check">
-                        <input type="checkbox" name="check" />
+                        <input type="checkbox" name="check" id="check"/>
                         我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
                     </label>
                     <button type="button" class="contact-submit">
